@@ -221,6 +221,14 @@ pub fun main(acctAddress: Address, id: UInt64): &NonFungibleToken.NFT {
 ```
 This script imports the NonFungibleToken and CryptoPoops smart contracts from address 0x05. Its main function, main, takes two parameters: an account address (acctAddress) and a non-fungible token ID (id). Within the function, it retrieves the CryptoPoops collection associated with the specified account address. If successful, it proceeds to borrow the authenticated metadata of the specified NFT ID from the collection. Finally, it returns a reference to the borrowed NFT metadata. If any errors occur during the process, it panics with an appropriate error message.
 
+# Features:
+
+The borrowAuthNFT function is an upcoming addition to the existing smart contract, designed to enable external users to retrieve and view the metadata of NFTs by specifying an NFT ID. This function will be made publicly accessible, ensuring transparency and ease of use for all users. To maintain security, the smart contract will implement proper access controls to manage permissions and prevent unauthorized access to sensitive NFT data.
+
+A complementary script will be developed to interact with the smart contract, demonstrating the borrowAuthNFT functionality. Users will input a specific NFT ID into the script, which will then retrieve and display the associated metadata. This interactive demonstration will showcase the practicality and utility of the borrowAuthNFT function in accessing NFT metadata.
+
+Moreover, the project will include transactions for deploying the smart contract and initializing the NFT contract. These transactions are essential for setting up the required accounts and initializing the NFT contract, laying the foundation for seamless interaction with the borrowAuthNFT function and the overall functionality of the smart contract.
+
 
 
 
